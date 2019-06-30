@@ -299,7 +299,8 @@ defmodule Stripe.ConverterTest do
     expected_result = %Stripe.Session{
       id: "CdWP8EBmSp1tJNIw4ZLF6w3XKd8MNKkEvlnSK7QmwFlDZ8rrjqBn9VI9vKiVdhfE",
       livemode: false,
-      object: "checkout.session"
+      object: "checkout.session",
+      client_reference_id: "my_client_ref"
     }
 
     fixture = Helper.load_fixture("session.json")
